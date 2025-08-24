@@ -204,7 +204,7 @@ export default function HomePage() {
             {content[language].hero.title}
           </h1>
           <p className="text-xl text-stone-600 mb-8 leading-relaxed">{content[language].hero.subtitle}</p>
-          <div className="flex flex-col items-center space-y-2">
+          <div className="flex flex-col items-center space-y-4">
             <Button
               size="lg"
               className="text-lg px-8 py-3 bg-emerald-600 hover:bg-emerald-700"
@@ -212,6 +212,14 @@ export default function HomePage() {
             >
               {content[language].hero.cta}
             </Button>
+            <a
+              href="https://super-funicular-f6429zlc4-paulmarin663-1342s-projects.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
+            >
+              {language === "ro" ? "Joacă Șah" : "Play Chess"}
+            </a>
             <p className="text-sm text-stone-600">{content[language].hero.ctaSubtext}</p>
           </div>
         </div>
