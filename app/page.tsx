@@ -213,7 +213,7 @@ export default function HomePage() {
               {content[language].hero.cta}
             </Button>
             <a
-              href="https://super-funicular-f6429zlc4-paulmarin663-1342s-projects.vercel.app"
+              href="https://first-time-chess-app-uajf-jq0k1ofe1-paulmarin663-1342s-projects.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
