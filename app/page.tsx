@@ -221,7 +221,7 @@ export default function HomePage() {
             <p className="text-sm text-stone-600 text-center max-w-md mx-auto">
               {language === "ro" 
                 ? "Accesează aplicația FirstTimeChess pentru a învăța și practica șahul" 
-                : "Access the FirstTimeChess learning app to practice and improve your chess skills"
+                : "Access the FirstTimeChess learning app to teach and learn chess"
               }
             </p>
             <p className="text-sm text-stone-600">{content[language].hero.ctaSubtext}</p>
