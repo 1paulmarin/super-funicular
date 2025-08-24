@@ -205,6 +205,7 @@ export default function HomePage() {
           </h1>
           <p className="text-xl text-stone-600 mb-8 leading-relaxed">{content[language].hero.subtitle}</p>
           <div className="flex flex-col items-center space-y-4">
+            <p className="text-sm text-stone-600">{content[language].hero.ctaSubtext}</p>
             <Button
               size="lg"
               className="text-lg px-8 py-3 bg-emerald-600 hover:bg-emerald-700"
@@ -224,7 +225,6 @@ export default function HomePage() {
                 : "Access the FirstTimeChess learning app to teach and learn chess"
               }
             </p>
-            <p className="text-sm text-stone-600">{content[language].hero.ctaSubtext}</p>
           </div>
         </div>
       </section>
