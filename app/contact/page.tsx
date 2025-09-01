@@ -59,6 +59,19 @@ export default function ContactPage() {
             "Focus on practical skills and winning games",
           ],
         },
+        app: {
+          title: "FirstTimeChess Learning App",
+          desc: "Enhance your learning experience with our interactive chess platform",
+          features: [
+            "Interactive chess board with complete rules",
+            "Real-time lessons using Google Meet integration",
+            "Teacher-student room management system",
+            "Multi-language support (English & Romanian)",
+            "Customizable themes and game settings",
+            "Perfect for remote chess education",
+          ],
+          cta: "Try the App",
+        },
       },
       footer: "© 2024 First Time Chess Lessons. Ready to make your first move? Back to Home",
     },
@@ -94,6 +107,19 @@ export default function ContactPage() {
         mostPopular: "Cel Mai Popular",
         moreInfo:
           "Ai nevoie de mai multe lecții? Pachetele și planurile de învățare extinse vor fi discutate și negociate în privat pe baza obiectivelor și programului tău specific.",
+        app: {
+          title: "Aplicația FirstTimeChess pentru Învățare",
+          desc: "Îmbunătățește-ți experiența de învățare cu platforma noastră interactivă de șah",
+          features: [
+            "Tablă de șah interactivă cu reguli complete",
+            "Lecții în timp real folosind integrarea Google Meet",
+            "Sistem de gestionare a camerelor profesor-student",
+            "Suport pentru mai multe limbi (Engleză și Română)",
+            "Teme și setări de joc personalizabile",
+            "Perfect pentru educația de șah la distanță",
+          ],
+          cta: "Încearcă Aplicația",
+        },
       },
       contact: {
         title: "Gata să Începi să Înveți?",
@@ -222,6 +248,44 @@ export default function ContactPage() {
                   <strong>{language === "ro" ? "Ai nevoie de mai multe lecții?" : "Need more lessons?"}</strong>{" "}
                   {content[language].pricing.moreInfo}
                 </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* FirstTimeChess App Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-center text-stone-800 mb-8 font-[family-name:var(--font-playfair)]">
+            {content[language].contact.app.title}
+          </h2>
+          <p className="text-center text-stone-600 mb-8 text-lg max-w-3xl mx-auto">
+            {content[language].contact.app.desc}
+          </p>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-amber-50/70 border-amber-200">
+              <CardContent className="pt-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-xl font-semibold text-amber-900 mb-4">
+                      {language === "ro" ? "🚀 Funcții Avansate:" : "🚀 Advanced Features:"}
+                    </h3>
+                    <ul className="text-amber-800 space-y-2">
+                      {content[language].contact.app.features.map((feature, index) => (
+                        <li key={index}>• {feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <img src="/logo.png" alt="FirstTimeChess Logo" className="h-20 w-auto mb-4" />
+                    <a
+                      href="https://v0-new-chat-ihoal7tan-paulmarin663-1342s-projects.vercel.app"
+                      className="px-6 py-3 bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold transform hover:scale-105 border-2 border-amber-600 hover:from-amber-800 hover:to-amber-900"
+                    >
+                      {content[language].contact.app.cta}
+                    </a>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>

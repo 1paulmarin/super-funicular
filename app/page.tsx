@@ -163,7 +163,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-stone-200 bg-stone-200 backdrop-blur-sm">
+      <header className="border-b border-amber-200 bg-amber-100 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center">
@@ -173,22 +173,22 @@ export default function HomePage() {
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => setLanguage("en")}
-                  className={`px-2 py-1 rounded text-sm ${language === "en" ? "bg-emerald-600 text-white" : "text-stone-700 hover:text-emerald-600"}`}
+                  className={`px-2 py-1 rounded text-sm ${language === "en" ? "bg-amber-700 text-amber-50" : "text-amber-800 hover:text-amber-600"}`}
                 >
                   EN
                 </button>
                 <button
                   onClick={() => setLanguage("ro")}
-                  className={`px-2 py-1 rounded text-sm ${language === "ro" ? "bg-emerald-600 text-white" : "text-stone-700 hover:text-emerald-600"}`}
+                  className={`px-2 py-1 rounded text-sm ${language === "ro" ? "bg-amber-700 text-amber-50" : "text-amber-800 hover:text-amber-600"}`}
                 >
                   RO
                 </button>
               </div>
               <div className="hidden md:flex items-center space-x-6">
-                <Link href="/" className="text-stone-700 hover:text-emerald-600 transition-colors">
+                <Link href="/" className="text-amber-800 hover:text-amber-600 transition-colors">
                   {content[language].nav.home}
                 </Link>
-                <Link href="/contact" className="text-stone-700 hover:text-emerald-600 transition-colors">
+                <Link href="/contact" className="text-amber-800 hover:text-amber-600 transition-colors">
                   {content[language].nav.contact}
                 </Link>
               </div>
@@ -198,47 +198,97 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-amber-50">
         <div className="container mx-auto text-center max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-stone-800 mb-6 font-[family-name:var(--font-playfair)]">
+          <h1 className="text-5xl md:text-6xl font-bold text-amber-900 mb-6 font-[family-name:var(--font-playfair)]">
             {content[language].hero.title}
           </h1>
-          <p className="text-xl text-stone-600 mb-8 leading-relaxed">{content[language].hero.subtitle}</p>
+          <p className="text-xl text-amber-800 mb-8 leading-relaxed">{content[language].hero.subtitle}</p>
           <div className="flex flex-col items-center space-y-4">
-            <p className="text-sm text-stone-600">{content[language].hero.ctaSubtext}</p>
+            <p className="text-sm text-amber-700">{content[language].hero.ctaSubtext}</p>
             <Button
               size="lg"
-              className="text-lg px-8 py-3 bg-emerald-600 hover:bg-emerald-700"
+              className="text-lg px-10 py-4 bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-amber-50 font-semibold rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-amber-700"
               onClick={handleGetStarted}
             >
               {content[language].hero.cta}
             </Button>
-            <a
-              href="https://first-time-chess-app-uajf-jq0k1ofe1-paulmarin663-1342s-projects.vercel.app"
-              className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-            >
+                          <a
+                href="https://v0-new-chat-ihoal7tan-paulmarin663-1342s-projects.vercel.app"
+                className="px-8 py-4 bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold text-lg transform hover:scale-105 border-2 border-amber-600 hover:from-amber-800 hover:to-amber-900"
+              >
               {language === "ro" ? "Joacă Șah" : "Play Chess"}
             </a>
-            <p className="text-sm text-stone-600 text-center max-w-md mx-auto">
+            <p className="text-sm text-amber-700 text-center max-w-md mx-auto">
               {language === "ro" 
                 ? "Accesează aplicația FirstTimeChess pentru a învăța și practica șahul" 
                 : "Access the FirstTimeChess learning app to teach and learn chess"
               }
             </p>
+            <div className="mt-4 p-4 bg-amber-100/50 rounded-lg border border-amber-200 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center mb-3">
+                <img src="/logo.png" alt="FirstTimeChess Logo" className="h-8 w-auto" />
+              </div>
+              <p className="text-sm text-amber-800 leading-relaxed">
+                {language === "ro" 
+                  ? "FirstTimeChess - Platformă interactivă de învățare a șahului. Perfectă pentru lecții individuale sau de grup folosind Google Meet. Profesorii pot crea camere de predare, iar studenții se pot alătura cu coduri de invitație. Aplicația include un tablă de șah interactivă cu reguli complete, teme vizuale personalizabile, suport pentru română și engleză, și funcții avansate pentru lecții structurate."
+                  : "FirstTimeChess - Interactive chess learning platform. Perfect for one-on-one or group lessons using Google Meet. Teachers can create teaching rooms, and students can join with invite codes. The app features an interactive chess board with complete rules, customizable visual themes, Romanian and English language support, and advanced features for structured lessons."
+                }
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-amber-50">
         <div className="container mx-auto max-w-4xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-stone-800 mb-6 font-[family-name:var(--font-playfair)]">
+              <h2 className="text-3xl font-bold text-amber-900 mb-6 font-[family-name:var(--font-playfair)]">
                 {content[language].about.title}
               </h2>
-              <p className="text-stone-600 mb-4 leading-relaxed">{content[language].about.p1}</p>
-              <p className="text-stone-600 leading-relaxed">{content[language].about.p2}</p>
+              <p className="text-amber-800 mb-4 leading-relaxed">{content[language].about.p1}</p>
+              <p className="text-amber-800 leading-relaxed">{content[language].about.p2}</p>
+              
+              <div className="mt-8 p-6 bg-amber-100/50 rounded-lg border border-amber-200">
+                <div className="flex items-center justify-center mb-4">
+                  <img src="/logo.png" alt="FirstTimeChess Logo" className="h-10 w-auto" />
+                </div>
+                <h3 className="text-xl font-semibold text-amber-900 mb-4 text-center">
+                  {language === "ro" ? "Despre Aplicația FirstTimeChess" : "About the FirstTimeChess App"}
+                </h3>
+                <p className="text-amber-800 mb-4 leading-relaxed">
+                  {language === "ro" 
+                    ? "FirstTimeChess este o platformă web interactivă de învățare a șahului, perfectă pentru lecții individuale sau de grup folosind Google Meet pentru comunicare. Aplicația este concepută special pentru profesori și studenți să învețe și să practice șahul împreună."
+                    : "FirstTimeChess is a web-based interactive chess learning platform, perfect for one-on-one or group chess lessons using Google Meet for communication. The app is designed specifically for teachers and students to learn and practice chess together."
+                  }
+                </p>
+                <div className="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <h4 className="font-semibold text-amber-900 mb-2">
+                      {language === "ro" ? "🚀 Funcții Principale:" : "🚀 Core Features:"}
+                    </h4>
+                    <ul className="text-amber-800 space-y-1">
+                      <li>• {language === "ro" ? "Autentificare cu roluri (Profesor/Student)" : "User Authentication & Roles (Teacher/Student)"}</li>
+                      <li>• {language === "ro" ? "Suport pentru română și engleză" : "Multi-language Support (EN/RO)"}</li>
+                      <li>• {language === "ro" ? "Sisteme de teme vizuale" : "Visual Theme Systems"}</li>
+                      <li>• {language === "ro" ? "Gestionarea camerelor de predare" : "Teaching Room Management"}</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-amber-900 mb-2">
+                      {language === "ro" ? "♟️ Funcții de Șah:" : "♟️ Chess Features:"}
+                    </h4>
+                    <ul className="text-amber-800 space-y-1">
+                      <li>• {language === "ro" ? "Tablă interactivă cu reguli complete" : "Interactive Board with Complete Rules"}</li>
+                      <li>• {language === "ro" ? "Controale avansate de joc" : "Advanced Game Controls"}</li>
+                      <li>• {language === "ro" ? "Setări personalizabile" : "Customizable Settings"}</li>
+                      <li>• {language === "ro" ? "Design responsive" : "Responsive Design"}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="flex justify-center">
               <img
@@ -252,46 +302,46 @@ export default function HomePage() {
       </section>
 
       {/* What You'll Learn Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-amber-50">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-center text-stone-800 mb-12 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-3xl font-bold text-center text-amber-900 mb-12 font-[family-name:var(--font-playfair)]">
             {content[language].learn.title}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white/70 border-stone-200">
+            <Card className="bg-amber-100/70 border-amber-200">
               <CardHeader>
                 <div className="text-3xl mb-2">♟️</div>
-                <CardTitle className="text-stone-800">{content[language].learn.basics.title}</CardTitle>
+                <CardTitle className="text-amber-900">{content[language].learn.basics.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-stone-600">{content[language].learn.basics.desc}</CardDescription>
+                <CardDescription className="text-amber-800">{content[language].learn.basics.desc}</CardDescription>
               </CardContent>
             </Card>
-            <Card className="bg-white/70 border-stone-200">
+            <Card className="bg-amber-100/70 border-amber-200">
               <CardHeader>
                 <div className="text-3xl mb-2">🎯</div>
-                <CardTitle className="text-stone-800">{content[language].learn.strategies.title}</CardTitle>
+                <CardTitle className="text-amber-900">{content[language].learn.strategies.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-stone-600">{content[language].learn.strategies.desc}</CardDescription>
+                <CardDescription className="text-amber-800">{content[language].learn.strategies.desc}</CardDescription>
               </CardContent>
             </Card>
-            <Card className="bg-white/70 border-stone-200">
+            <Card className="bg-amber-100/70 border-amber-200">
               <CardHeader>
                 <div className="text-3xl mb-2">🏆</div>
-                <CardTitle className="text-stone-800">{content[language].learn.confidence.title}</CardTitle>
+                <CardTitle className="text-amber-900">{content[language].learn.confidence.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-stone-600">{content[language].learn.confidence.desc}</CardDescription>
+                <CardDescription className="text-amber-800">{content[language].learn.confidence.desc}</CardDescription>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-amber-50">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-center text-stone-800 mb-12 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-3xl font-bold text-center text-amber-900 mb-12 font-[family-name:var(--font-playfair)]">
             {language === "ro" ? "Recenzii" : "Reviews"}
           </h2>
 
@@ -299,25 +349,25 @@ export default function HomePage() {
           {reviews.length > 0 && (
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {reviews.map((review) => (
-                <Card key={review.id} className="bg-white/70 border-stone-200">
+                <Card key={review.id} className="bg-amber-100/70 border-amber-200">
                   <CardHeader>
                     <div className="flex items-center justify-between">
-                      <CardTitle className="text-stone-800 text-lg">{review.name}</CardTitle>
+                      <CardTitle className="text-amber-900 text-lg">{review.name}</CardTitle>
                       <div className="flex">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <span
                             key={star}
-                            className={`text-lg ${star <= review.rating ? "text-yellow-400" : "text-stone-300"}`}
+                            className={`text-lg ${star <= review.rating ? "text-yellow-400" : "text-amber-300"}`}
                           >
                             ⭐
                           </span>
                         ))}
                       </div>
                     </div>
-                    <p className="text-sm text-stone-500">{review.date}</p>
+                    <p className="text-sm text-amber-600">{review.date}</p>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-stone-600">{review.text}</p>
+                    <p className="text-amber-800">{review.text}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -327,11 +377,11 @@ export default function HomePage() {
           {/* Add review button and form */}
           <div className="text-center">
             {!showForm ? (
-              <Button onClick={() => setShowForm(true)} className="bg-emerald-600 hover:bg-emerald-700">
+              <Button onClick={() => setShowForm(true)} className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-amber-50 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-amber-700">
                 {content[language].reviews.title}
               </Button>
             ) : (
-              <Card className="bg-white/70 border-stone-200 max-w-2xl mx-auto">
+              <Card className="bg-amber-100/70 border-amber-200 max-w-2xl mx-auto">
                 <CardContent className="pt-6">
                   <form onSubmit={handleReviewSubmit} className="space-y-6">
                     <div>
@@ -340,19 +390,19 @@ export default function HomePage() {
                         value={reviewName}
                         onChange={(e) => setReviewName(e.target.value)}
                         required
-                        className="bg-white/50"
+                        className="bg-amber-50"
                       />
                     </div>
                     <div>
                       <div className="flex items-center space-x-2 mb-2">
-                        <span className="text-stone-700">Rating:</span>
+                        <span className="text-amber-800">Rating:</span>
                         {[1, 2, 3, 4, 5].map((star) => (
                           <button
                             key={star}
                             type="button"
                             onClick={() => setReviewRating(star)}
                             className={`text-2xl transition-colors hover:scale-110 ${
-                              star <= reviewRating ? "text-yellow-400" : "text-stone-300 hover:text-yellow-200"
+                              star <= reviewRating ? "text-yellow-400" : "text-amber-300 hover:text-yellow-200"
                             }`}
                           >
                             {star <= reviewRating ? "★" : "☆"}
@@ -365,16 +415,16 @@ export default function HomePage() {
                         placeholder={content[language].reviews.reviewPlaceholder}
                         value={reviewText}
                         onChange={(e) => setReviewText(e.target.value)}
+                        className="bg-amber-50"
                         required
                         rows={4}
-                        className="bg-white/50"
                       />
                     </div>
                     <div className="flex space-x-4">
-                      <Button type="submit" className="flex-1 bg-emerald-600 hover:bg-emerald-700">
+                      <Button type="submit" className="flex-1 bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-amber-50 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-amber-700">
                         {content[language].reviews.submitButton}
                       </Button>
-                      <Button type="button" variant="outline" onClick={() => setShowForm(false)} className="flex-1">
+                      <Button type="button" variant="outline" onClick={() => setShowForm(false)} className="flex-1 border-2 border-stone-300 text-stone-700 hover:bg-stone-50 hover:border-stone-400 font-semibold rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                         {language === "ro" ? "Anulează" : "Cancel"}
                       </Button>
                     </div>
@@ -387,11 +437,11 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-stone-200 bg-stone-200 py-8 px-4">
+      <footer className="border-t border-amber-200 bg-amber-50 py-8 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-stone-700">
+          <p className="text-amber-800">
             {content[language].footer.split("Contact me today")[0]}
-            <Link href="/contact" className="text-emerald-600 hover:underline">
+            <Link href="/contact" className="text-amber-700 hover:underline">
               {language === "ro" ? "Contactează-mă astăzi" : "Contact me today"}
             </Link>
           </p>
