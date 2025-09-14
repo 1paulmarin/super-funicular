@@ -279,7 +279,7 @@ export default function ContactPage() {
                   <div className="flex flex-col items-center justify-center">
                     <img src="/logo.png" alt="FirstTimeChess Logo" className="h-20 w-auto mb-4" />
                     <a
-                      href="https://v0-new-chat-1c6crg5yr-paulmarin663-1342s-projects.vercel.app"
+                      href="https://first-time-chess-enhanced.netlify.app"
                       className="px-6 py-3 bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold transform hover:scale-105 border-2 border-amber-600 hover:from-amber-800 hover:to-amber-900"
                     >
                       {content[language].contact.app.cta}

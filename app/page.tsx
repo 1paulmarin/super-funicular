@@ -214,7 +214,7 @@ export default function HomePage() {
               {content[language].hero.cta}
             </Button>
                           <a
-                href="https://v0-new-chat-1c6crg5yr-paulmarin663-1342s-projects.vercel.app"
+                href="https://first-time-chess-enhanced.netlify.app"
                 className="px-8 py-4 bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold text-lg transform hover:scale-105 border-2 border-amber-600 hover:from-amber-800 hover:to-amber-900"
               >
               {language === "ro" ? "Joacă Șah" : "Play Chess"}
