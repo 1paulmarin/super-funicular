@@ -93,13 +93,13 @@ export default function HomePage() {
       hero: {
         title: "Descoperă Lumea Șahului",
         subtitle:
-          "Lecții prietenoase pentru începători completi. Învață șahul de la zero și câștigă primele tale jocuri cu instrucțiuni personalizate.",
+          "Lecții prietenoase pentru începători compleți. Învață șahul de la zero și câștigă primele tale jocuri cu instrucțiuni personalizate.",
         cta: "Începe Acum",
         ctaSubtext: "intră în legătură cu mine acum!",
       },
       about: {
         title: "Misiunea Mea",
-        p1: "Misiunea mea este să predau șahul de la nivelul zero până când începi să îți câștigi propriile tale meciuri! Vom începe să învățăm piesele una câte una, cum să le mișcăm, să jucăm meciuri în timp ce îți explic procesul de gândire și de ce este mai bună o mutare în locul alteia. Te voi ghida cu toate abilitățile mele, o să avem meciuri de antrenament până când elevul îl învinge pe maestru! :]",
+        p1: "Misiunea mea este să predau șahul de la nivelul zero până când începi să îți câștigi propriile tale meciuri! Vom începe să învățăm piesele una câte una, cum să le mișcăm, să jucăm meciuri în timp ce îți explic procesul de gândire și de ce este mai bună o mutare în locul alteia. Te voi ghida cu toate abilitățile mele, vom avea meciuri de antrenament până când elevul îl învinge pe maestru! :]",
         p2: "Cu timp și practică vei învăța nu doar să joci, ci să gândești și să iubești șahul!",
       },
       learn: {
@@ -231,7 +231,7 @@ export default function HomePage() {
               </div>
               <p className="text-sm text-amber-800 leading-relaxed">
                 {language === "ro" 
-                  ? "FirstTimeChess - Platformă interactivă de învățare a șahului. Perfectă pentru lecții individuale sau de grup folosind Google Meet. Profesorii pot crea camere de predare, iar studenții se pot alătura cu coduri de invitație. Aplicația include un tablă de șah interactivă cu reguli complete, teme vizuale personalizabile, suport pentru română și engleză, și funcții avansate pentru lecții structurate."
+                  ? "FirstTimeChess - Platformă interactivă de învățare a șahului. Perfectă pentru lecții individuale sau de grup folosind Google Meet. Profesorii pot crea camere de predare, iar studenții se pot alătura cu coduri de invitație. Aplicația include o tablă de șah interactivă cu reguli complete, teme vizuale personalizabile, suport pentru română și engleză, și funcții avansate pentru lecții structurate."
                   : "FirstTimeChess - Interactive chess learning platform. Perfect for one-on-one or group lessons using Google Meet. Teachers can create teaching rooms, and students can join with invite codes. The app features an interactive chess board with complete rules, customizable visual themes, Romanian and English language support, and advanced features for structured lessons."
                 }
               </p>

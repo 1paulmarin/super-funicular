@@ -107,19 +107,6 @@ export default function ContactPage() {
         mostPopular: "Cel Mai Popular",
         moreInfo:
           "Ai nevoie de mai multe lecții? Pachetele și planurile de învățare extinse vor fi discutate și negociate în privat pe baza obiectivelor și programului tău specific.",
-        app: {
-          title: "Aplicația FirstTimeChess pentru Învățare",
-          desc: "Îmbunătățește-ți experiența de învățare cu platforma noastră interactivă de șah",
-          features: [
-            "Tablă de șah interactivă cu reguli complete",
-            "Lecții în timp real folosind integrarea Google Meet",
-            "Sistem de gestionare a camerelor profesor-student",
-            "Suport pentru mai multe limbi (Engleză și Română)",
-            "Teme și setări de joc personalizabile",
-            "Perfect pentru educația de șah la distanță",
-          ],
-          cta: "Încearcă Aplicația",
-        },
       },
       contact: {
         title: "Gata să Începi să Înveți?",
@@ -134,11 +121,24 @@ export default function ContactPage() {
         why: {
           title: "De Ce să Alegi Aceste Lecții?",
           reasons: [
-            "Concepute special pentru începători completi",
+            "Concepute special pentru începători compleți",
             "Abordare răbdătoare și încurajatoare în predare",
             "Programare flexibilă pentru a se potrivi vieții tale",
             "Concentrare pe abilități practice și câștigarea jocurilor",
           ],
+        },
+        app: {
+          title: "Aplicația FirstTimeChess pentru Învățare",
+          desc: "Îmbunătățește-ți experiența de învățare cu platforma noastră interactivă de șah",
+          features: [
+            "Tablă de șah interactivă cu reguli complete",
+            "Lecții în timp real folosind integrarea Google Meet",
+            "Sistem de gestionare a camerelor profesor-student",
+            "Suport pentru mai multe limbi (Engleză și Română)",
+            "Teme și setări de joc personalizabile",
+            "Perfect pentru educația de șah la distanță",
+          ],
+          cta: "Încearcă Aplicația",
         },
       },
       footer: "© 2024 Lecții de Șah pentru Prima Dată. Gata să faci prima mișcare? Înapoi la Acasă",
